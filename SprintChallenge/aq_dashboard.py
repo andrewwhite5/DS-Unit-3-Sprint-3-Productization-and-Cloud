@@ -10,6 +10,7 @@ APP = Flask(__name__)
 api = openaq.OpenAQ()
 status, body = api.measurements(city='Los Angeles', parameter='pm25')
 
+# Create list of tuples with 'utc' and 'value'
 def utc_values():
     new_list = []
     for n in range(0,100):
@@ -17,6 +18,7 @@ def utc_values():
         new_list.append(my_tuple)
     return new_list
 
+# Webpage that shows list of 100 tuples from above
 @APP.route('/')
 def root():
     return str(utc_values())
