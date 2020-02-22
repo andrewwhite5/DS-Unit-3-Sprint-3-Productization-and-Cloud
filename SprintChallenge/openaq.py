@@ -6,7 +6,6 @@ import json
 import requests
 import math
 
-
 class ApiError(Exception):
     pass
 

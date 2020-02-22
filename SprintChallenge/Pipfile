@@ -9,6 +9,10 @@ verify_ssl = true
 flask = "*"
 flask-sqlalchemy = "*"
 requests = "*"
+py-openaq = "*"
+pandas = "*"
+seaborn = "*"
+matplotlib = "*"
 
 [requires]
 python_version = "3.7"
